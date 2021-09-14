@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font: 100% / 1.5 Arial;
+  
+    background-image: linear-gradient(135deg, #000000  0%, #000000 25%, #000000 50%, #000000 75%, #000000 100%);
+  
+  }
+  
+  u{
+    text-decoration: none;
+  }
+  
+  span:hover{
+    color:blue;
+  
+  }
+  
+  ::-webkit-scrollbar {
+      display: none;
+  }
+  .fixed {
+    position: fixed;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    width: 100vw;
+    top: 50%;
+    font-size: 24px;
+  }
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+  
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-2px) scale(3);
+    transform: translateZ(-2px) scale(3);
+  }
+  .parallax__layer--back2 {
+    -webkit-transform: translateZ(-6px) scale(5);
+    transform: translateZ(-6px) scale(5);
+  }
+  .parallax__layer--back3 {
+    -webkit-transform: translateZ(-12px) scale(6);
+    transform: translateZ(-12px) scale(6);
+  }
+  
+  
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+  
+  .starfield > * {
+    background-size: 200px 200px;
+    background-image: radial-gradient(
+        2px 2px at 40px 60px,
+        #ccc,
+        rgba(0, 0, 0, 0)
+      ),
+      radial-gradient(3px 3px at 20px 50px, #ddd, rgba(0, 0, 0, 0)),
+      radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)),
+      radial-gradient(2px 2px at 40px 60px, rgb(0, 255, 0), rgba(0, 0, 0, 0)),
+      radial-gradient(2px 2px at 110px 90px, #C0C0C0, rgba(0, 0, 0, 0)),
+      radial-gradient(2px 2px at 190px 150px, rgb(255, 200, 0), rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+  }
+  .starfield > * {
+    position: absolute;
+    top: -250%;
+    left: 0;
+    height: 350%;
+    width: 100%;
+  }
+  
+  .starfield span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .starfield span:nth-child(3) {
+    transform: rotate(69deg);
+  }
+  .starfield span:nth-child(4) {
+    transform: rotate(123deg);
+  }
+  
+  .con1{
+    margin-top: -150px;
+  }
+  
+  .navbartext {
+    padding-top: 0;
+  }
+  
+  .navbar {
+    background: transparent;
+  }
+  
+  .whitetext {
+    color: white !important;
+  }
+  
+  h2{
+    text-align: center;
+    margin-top: 25%;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    margin: 26px;
+    padding: 12px;
+    /* border: 2px solid black; */
+  }
+  
+  .flex-item-left {
+    background: transparent;
+    padding: 18px;
+    flex: 50%;
+    margin: 3px;
+    /* border: 2px solid black; */
+  }
+  
+  .flex-item-right {
+    background: transparent;
+    padding: 18px;
+    margin: 3px;
+    /* border: 2px solid black; */
+    flex: 50%;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  
+  }
+  @media screen and (max-width: 800px) {
+  
+    .fa-twitter{
+      background: yellow;
+      color: blue;
+    }
+  }
+  
+  .con2{
+    text-align: center;
+    margin: 15% 10%;
+    background: transparent;
+    margin-top: 0;
+    align-items: center;
+  
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  .fa-facebook {
+    background: white;
+    color: black;
+  }
+  
+  
+  .fa-twitter {
+    background: white;
+    color: black;
+  }
+  .fa-linkedin {
+    background: white;
+    color: black;
+  }
+  .fa {
+    padding: 18px;
+      font-size: 20px;
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      border: 2px solid white;
+      margin-left: 9px;
+      margin-right: 8px;
+      margin-bottom: 10px;
+  
+  
+  }
+  
+  .fa-envelope {
+    background: white;
+    color: black;
+  }
+  .fa-instagram {
+    background: white;
+    color: black;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .hid{
+    visibility: hidden;
+  
+  }
+  
+  .button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .social{
+  
+    padding-top: 2.5%;
+  }
+  .col-xl-1{
+  
+  }
+  h1:hover{
+    color:red;
+  }
+  .Contacts{
+    margin-left: 19.5%;
+    margin-right: 19.5%;
+  }
